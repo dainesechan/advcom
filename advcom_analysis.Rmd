@@ -1,0 +1,106 @@
+
+---
+output:
+  html_document:
+    css: advcom_analysis.css
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("knitr")
+library("HSAUR")
+library("MASS")
+library("Epi")
+library("epitools")
+library("dplyr")
+library("ggplot2")
+library("plotly")
+library("tidyr")
+library("kableExtra")
+```
+
+
+<div class="box"> **Advancement Report: September 2022** </div>
+
+\
+
+## Donor Giving Revenue Summary\
+\
+
+
+### BRIEFING - Advancement Committee
+
+***
+The Bulletin finished June 2022 with a full year of donor giving at $3,349,561 compared to a budget of $1,050,960 for the full 2021/2022 fiscal year. This equates to approximately 219% to budget (+$2,298,607). The budget increase is mainly, but not solely, due to large gifts received from two anonymous individuals through Effective Giving, which is an organization whose high net-worth donors who participate and believe in “EA”, effective altruism. 
+
+\
+```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+tabl <- "
++----------------+----------------+---------------------------+
+|Donor Giving    | FY 2022 to 2023|     Total Gifts           |
+|                | New Budget     |     in current FY         |
+|                |                |    July'22 - August'23    |
++================+================+===========================+
+| Individual     | $1,136,420     |  $76,460.54               |
+|                |                |                           |
++----------------+----------------+---------------------------+
+| Corporate      | $94,000        | -                         |
+|                |                |                           |
++----------------+----------------+---------------------------+
+| Sub-Total      | $1,230,420     |  $76,460.54               |
+|                |                |                           |
++----------------+----------------+---------------------------+
+|Transformational| -              | -                         |
+| Gifts          |                |                           |
++----------------+----------------+---------------------------+
+| Total          | $1,230,420     |  $76,460.54               |
+|                |                |                           |
++----------------+----------------+---------------------------+
+"
+cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+```
+
+
+
+*** 
+
+### **Composition of Gifts**
+\
+
+
+<div class="pull-left-50">*by Donor type* </div>
+<div class="pull-right-50 text-center">*by Gift type*</div>
+
+
+```{r, echo=FALSE, message=FALSE, fig.show="hold",  out.width="50%"}
+source("advcom_analysisAugust.R", chdir = TRUE)
+aug2022_dt_amt_plot
+aug2022_gt_amt_plot
+```
+
+\
+
+***
+### **New Fiscal Year, 2022- 2023** ### 
+
+The Bulletin finished August 2022 at $43,982.60 compared to a budget of $30,400. This equates to approximately +44% to budget. We now have $1,153,959.46 left to raise to meet the 2022-2023 fiscal year budget of $1,230,420. 
+\
+
+Major Gift details:
+2022 July-August 31 Gifts and Pledges of $10,000 or greater, excluding board members, include two gifts totaling $20,265.88: Peter Kellner at $10,265.88 (new first-time donor), and Joan and James Shapiro Foundation at $10,000.00 (Joan is a former Governing Board member, last gift in 2021 at $1,000).
+
+
+```{r, echo=FALSE, message=FALSE}
+source("advcom_analysisAugust.R", chdir = TRUE)
+fy_trendplot1
+```
+
+
+
+### **Conversations Before Midnight** ### 
+
+We are currently Fundraising for the November 9th, 2022 “Conversations Before Midnight”, the Bulletin’s annual virtual gathering. This event is budgeted at $189,000. The invitations dropped mid-September and the online reservation portal is now open. Past table buyers and Governing Board members have received the event sponsorship packet. Solicitations for event support are ongoing. The sponsorship packet is included in your board meeting book.
+We are grateful to Governing Board members who have already their made reservations and to Dave Kuhlman for bringing in the event’s lead sponsor, Axiom Consulting Partners.
+
+

@@ -1,0 +1,59 @@
+h1 {
+  font-family: "Georgia";
+  font-size: 20pt;
+
+}
+
+.box {
+  border: 5px white ;
+  background-color: #851618;
+  font-family: "Georgia";
+  color: white;
+  font-size: 25px;
+  padding: 40px;
+  margin: 0px;
+  width: 900px;
+  height: 40px;
+  text-align: left;
+}
+
+
+h2 {
+  font-family: "Georgia";
+  font-size: 16pt;
+
+}
+
+
+h3 {
+  font-family: "Georgia";
+  font-size: 14pt;
+
+}
+
+p {
+  font-family: "Georgia";
+  font-size: 12pt;
+  
+}
+
+a:hover {
+color: red;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+div {
+    font-family: "Georgia";
+  font-size: 12pt;
+  
+}
+}
+  
+}
